@@ -9,9 +9,9 @@ console.log(Boolean(1))
 console.log(Boolean(0))
 console.log(Boolean(NaN))
 // Object任意对象转为true，null转为false
-console.log("Number")
 console.log(Boolean({}))
 console.log(Boolean(null))
+console.log("Object") //Object
 // Undefined不存在传为true，undefined转为false
 console.log("Undefined")
 console.log(Boolean())
