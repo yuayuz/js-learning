@@ -87,7 +87,7 @@ console.log(e.concat(f))
 // 打平数组参数？？？？
 
 // slice()创建包含原有数组一个或者多个元素的新数组
-console.log(f.slice(1,4))// 包含头但不包含为
+console.log(f.slice(1,4))// 包含头但不包含尾
 
 // splice() 始终返回数组中被删除的元素
 let g=["a","b","c","d","e"];

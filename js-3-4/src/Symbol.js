@@ -10,5 +10,5 @@ let sym2=Symbol.for('foo')
 let sym3=Symbol('foo')
 console.log(typeof sym2) //symbol
 console.log(sym2===sym3); //false
-// 使用Symbol。KeyFor()查询
+// 使用 Symbol.keyFor()查询
 console.log(Symbol.keyFor(sym2)); //foo
