@@ -1,4 +1,3 @@
-
 let sym=Symbol("sym");
 console.log(typeof sym);
 console.log(sym);
