@@ -1,4 +1,4 @@
-//for-in(枚举对象中非符号键属性)
+// for-in(枚举对象中非符号键属性)
 for(let i in [1,2,3]){
     console.log(i);
 }

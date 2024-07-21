@@ -1,15 +1,15 @@
 class Person {
 }
 console.log(Person);
-console.log(typeof Person); //类是一种特殊函数
+console.log(typeof Person); // 类是一种特殊函数
 const animal = class {
 }
 let person = new Person();
 
-//类定义不能提升，受块用域限制
-//包含构造函数，实例方法，获取函数，设置函数，静态类方法
+// 类定义不能提升，受块用域限制
+// 包含构造函数，实例方法，获取函数，设置函数，静态类方法
 
-//类定义语法把类块中定义的方法作为原型方法
+// 类定义语法把类块中定义的方法作为原型方法
 
 class Person1{
     constructor(name){
@@ -70,7 +70,7 @@ class A{
 
 class B extends A{
     constructor() {
-        super(); //如果显式定义了构造函数，则必须条用super()或者在其中返回一个对象
+        super(); // 如果显式定义了构造函数，则必须条用super()或者在其中返回一个对象
     }
     B="B"
 }
@@ -79,9 +79,9 @@ let b=new B()
 console.log(b)
 
 
-//类混入，值混入多个对象的属性使用Object().assign（）；混入类的行为需要自己实现表达式
+// 类混入，值混入多个对象的属性使用Object().assign（）；混入类的行为需要自己实现表达式
 
-//一种策略是定义一组“可嵌套”的函数，每个函数分别接受一个超类作为参数，而将混入类定义为这个参数的子类，并返回这个类
+// 一种策略是定义一组“可嵌套”的函数，每个函数分别接受一个超类作为参数，而将混入类定义为这个参数的子类，并返回这个类
 
 class C{}
 
