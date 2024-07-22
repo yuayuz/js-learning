@@ -8,13 +8,13 @@ weakMap = new WeakMap([   // 弱映射中的键只能是Object或者继承自Obj
     [b, 2],
     [c, 3],
 ]);
-console.log(weakMap);
+console.log(weakMap);//WeakMap { <items unknown> }
 weakMap.set(d, 4)// 添加键/值
 if (weakMap.has(a)) {// 查询
-    console.log(weakMap.get(a))// 获得
+    console.log(weakMap.get(a))// 获得--1
 }
 weakMap.delete(b)// 删除
-console.log(weakMap)
+console.log(weakMap)//WeakMap { <items unknown> }
 
 // 每有clear方法，不可迭代
 

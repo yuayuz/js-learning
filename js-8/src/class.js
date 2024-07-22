@@ -1,7 +1,7 @@
 class Person {
 }
-console.log(Person);
-console.log(typeof Person); // 类是一种特殊函数
+console.log(Person); //[class Person]
+console.log(typeof Person); // !!!类是一种特殊函数--function
 const animal = class {
 }
 let person = new Person();
@@ -45,19 +45,27 @@ class Person1{
 }
 
 let person1=new Person1("小明")
-person1.sayHi()
-person1.getName()
-person1.sayhello()
+person1.sayHi() //Hi
+person1.getName() //小明
+person1.sayhello() //Hello
 person1.name="jake"
-console.log(person1.name)
-Person1.locate()
+console.log(person1.name) //jake
+Person1.locate() //haha
 //类定义不显式支持在类上或者原型上添加成员函数，但在外部可以手动添加
 person1.age=16
 console.log(person1)
+/*
+Person1 {
+  getName: [Function: getName],
+  name_: 'jake',
+  sayHi: [Function (anonymous)],
+  age: 16
+}
+*/
 
 Person1.prototype.n="小红"
 let p=new Person1()
-p.getProtoTypeN()
+p.getProtoTypeN() //小红
 
 // 继承
 
@@ -75,8 +83,8 @@ class B extends A{
     B="B"
 }
 
-let b=new B()
-console.log(b)
+let b=new B() //A是B的父类
+console.log(b) //B { A: 'A', B: 'B' }
 
 
 // 类混入，值混入多个对象的属性使用Object().assign（）；混入类的行为需要自己实现表达式
@@ -100,4 +108,5 @@ let F=(Superclass)=>class extends Superclass{
 class CDEF extends D(E(F(C))){}
 
 let cdef = new CDEF()
-console.log(cdef)
+console.log(cdef) //CDEF { F: 'F', E: 'E', D: 'D' }
+

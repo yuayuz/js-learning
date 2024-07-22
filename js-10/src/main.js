@@ -37,7 +37,7 @@ function foo(name) {
     bar()
 }
 
-foo("小明")
+foo("小明") //小明
 
 // ECMAScript函数没有重载
 
@@ -50,7 +50,17 @@ let x = function (name = "x", father = `${name}的父亲`) {
     console.log(arguments)
 }
 x()
+/*
+x
+x的父亲
+[Arguments] {}
+*/
 x("小明")
+/*
+小明
+小明的父亲
+[Arguments] { '0': '小明' }
+*/
 
 
 // 扩展参数（分别传入数组元素）
@@ -63,15 +73,15 @@ function getSum() {
 }
 
 const values = [1, 2, 3, 4]
-getSum(...values)
-getSum(5, ...values, ...[6, 7])
+getSum(...values)//10
+getSum(5, ...values, ...[6, 7])//28
 
 let sum = (a = 0, b = 0, c = 0) => {
     console.log(a + b + c)
 }
-sum(...[5])
-sum(...[1, 2])
-sum(...[1, 2, 3, 4])
+sum(...[5])//5
+sum(...[1, 2])//3
+sum(...[1, 2, 3, 4])//6
 
 // 收集参数
 
@@ -80,10 +90,10 @@ function getSum1(...values) {
     return values.reduce((sum, value) => sum + value, 0)
 }
 
-console.log(getSum1(1, 2, 3))
+console.log(getSum1(1, 2, 3))//6
 
 let sum1 = (...values) => values.reduce((sum, value) => sum + value, 0)
-console.log(sum1(1, 2, 3))
+console.log(sum1(1, 2, 3))//6
 
 // 函数声明提升，函数表达式必须等到代码执行到那一行，才会在执行上下文中生成函数定义
 
@@ -95,7 +105,7 @@ function num(num1, num2) {
 let getSum3 = (sum, num1, num2, num3) => {
     return sum(num1, num2)
 }
-console.log(getSum3(num, 1, 2))
+console.log(getSum3(num, 1, 2))//3
 
 
 // arguments
@@ -109,7 +119,7 @@ function factorial(num) {
     }
 }
 
-console.log(factorial(5))
+console.log(factorial(5))//120
 
 // this
 // 标准函数中，this引用的是把函数的当成方法调用的上下文对象，此时称其为this值
@@ -122,7 +132,7 @@ let a = function () {
 let b = function () {
     a()
 }
-b()
+b()//[Function: b]
 
 // prototype保存引用类型所有实例方法的地方，从而有所有实例共享
 // apply()和call()
@@ -146,6 +156,29 @@ let c = function (num1, num2) {
     d()
 }
 c(1, 2);
+//3
+/*
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  structuredClone: [Function: structuredClone],
+  atob: [Getter/Setter],
+  btoa: [Getter/Setter],
+  performance: [Getter/Setter],
+  fetch: [Function: value],
+  crypto: [Getter]
+}
+*/
 // 立即调用的函数表达式（IIFE）
 // 类似与函数声明，被包含在括号中会被解释为函数表达式，紧跟着第二组括号会立即调用前面的函数表达式
 (function () {
@@ -157,6 +190,7 @@ c(1, 2);
         console.log(i)
     }
 })();
+//0 1 2 3 4 5 6 7 8 9
 
 // 私有变量（没有私有成员）
 

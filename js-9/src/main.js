@@ -17,11 +17,11 @@ const handler={
 
 const proxy =new Proxy(target,handler)
 
-console.log("proxy",proxy.foo)
-console.log("target",target.foo)
+console.log("proxy",proxy.foo) //proxy hello
+console.log("target",target.foo) //target bar
 
-console.log("proxy",proxy["foo"])
-console.log("target",target["foo"])
+console.log("proxy",proxy["foo"]) //proxy hello
+console.log("target",target["foo"]) //target bar
 
 // k可以调用全局Reflect对象上（封装了原始行为）的同名方法来轻松重建
 
@@ -31,15 +31,15 @@ const handler1={
     }
 }
 const proxy1=new Proxy(target,handler1)
-console.log("proxy",proxy1.foo)
-console.log("target",target.foo)
+console.log("proxy",proxy1.foo) //proxy bar hello,handler1
+console.log("target",target.foo) //target bar
 
 const handler2={
     get:Reflect.get
 }
 const proxy2=new Proxy(target,handler2)
-console.log("proxy",proxy2.foo)
-console.log("target",target.foo)
+console.log("proxy",proxy2.foo) //proxy bar
+console.log("target",target.foo) //target bar
 
 // 捕获器不变式---每个获得的方法都知道目标对象上下文、捕获函数签名，但捕获处理程序的行为必须遵循“不变式”以防止出现反常行为
 

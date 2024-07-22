@@ -1,19 +1,19 @@
 // Boolean的true与false区分大小写，TRUE与FALSE不是Boolean
 // string非空字符转为true，""转为false
-console.log("String")
-console.log(Boolean("1"))
-console.log(Boolean(""))
+console.log("String") //String
+console.log(Boolean("1")) //true
+console.log(Boolean("")) //false
 // Number非0数值转为true，0与NaN转为false
-console.log("Number")
-console.log(Boolean(1))
-console.log(Boolean(0))
-console.log(Boolean(NaN))
+console.log("Number") //Number
+console.log(Boolean(1)) //true
+console.log(Boolean(0)) //false
+console.log(Boolean(NaN)) //false
 // Object任意对象转为true，null转为false
-console.log(Boolean({}))
-console.log(Boolean(null))
 console.log("Object") //Object
+console.log(Boolean({})) //true
+console.log(Boolean(null)) //false
 // Undefined不存在传为true，undefined转为false
-console.log("Undefined")
-console.log(Boolean())
+console.log("Undefined") //Undefined
+console.log(Boolean()) //false
 let u
-console.log(Boolean(u))
+console.log(Boolean(u)) //false

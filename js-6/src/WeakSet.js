@@ -5,8 +5,8 @@ const a = {id: 1},
 
 let weakSet = new WeakSet([a,b,c,d])
 weakSet.add(a)
-console.log(weakSet.has(a))
+console.log(weakSet.has(a))// true
 weakSet.delete(b)
-console.log(weakSet.has(b))
+console.log(weakSet.has(b)) //false
 
 //不可迭代
