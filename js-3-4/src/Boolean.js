@@ -1,4 +1,4 @@
-/*Boolean的true与false区分大小写，TRUE与FALSE不是Boolean*/
+// Boolean的true与false区分大小写，TRUE与FALSE不是Boolean
 // string非空字符转为true，""转为false
 console.log("String")
 console.log(Boolean("1"))

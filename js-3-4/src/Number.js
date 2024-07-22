@@ -1,4 +1,4 @@
-/*Number*/
+// Number
 const intNum1=1 // 十进制
 console.log(intNum1)
 const intNum2= 0o70 // 八进制

@@ -59,7 +59,7 @@ Person1.prototype.n="小红"
 let p=new Person1()
 p.getProtoTypeN()
 
-/*继承*/
+// 继承
 
 class A{
     constructor(){

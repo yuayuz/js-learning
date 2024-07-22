@@ -15,7 +15,7 @@ const num=10;
 console.log(num.toString(2));
 // 字符串转换String()将null与undefined分别转为"null"与"undefined"
 
-/*模板字面量*/
+// 模板字面量
 const s1=`a
 b
 c`

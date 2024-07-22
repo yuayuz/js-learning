@@ -1,10 +1,10 @@
-/*typeof操作符*/
+// typeof操作符
 const num=1
 console.log(typeof num)
 console.log(typeof (num))
 console.log(typeof "num")
 
-/*undefined为假值，未赋值变量自动赋予undefined，“未声明也自动赋予”*/
+// undefined为假值，未赋值变量自动赋予undefined，“未声明也自动赋予”
 let n;
 console.log(typeof n)
 console.log(typeof m)
