@@ -1,18 +1,18 @@
 /*Number*/
-const intNum1=1// 十进制
+const intNum1=1 // 十进制
 console.log(intNum1)
-const intNum2= 0o70// 八进制
+const intNum2= 0o70 // 八进制
 console.log(intNum2)
-const intNum3= 0xA// 十六进制
+const intNum3= 0xA // 十六进制
 console.log(intNum3)
 
-const floatNum1=.1// 有效，不推荐
+const floatNum1=.1 // 有效，不推荐
 console.log(floatNum1)
-const floatNum2=1.// 视为整数
+const floatNum2=1. // 视为整数
 console.log(floatNum2)
-const floatNum3=1.0// 视为整数
+const floatNum3=1.0 // 视为整数
 console.log(floatNum3)
-let floatNum4=0.0000003// 小数点后至少包含6个0的浮点值自动转为科学计数法
+let floatNum4=0.0000003 // 小数点后至少包含6个0的浮点值自动转为科学计数法
 console.log(floatNum4)
 
 // 特殊数值NaN（Not a Number）,用于表示本来要返回数值的操作失败，判断函数为NaN()
