@@ -16,7 +16,7 @@ if (weakMap.has(a)) {// 查询
 weakMap.delete(b)// 删除
 console.log(weakMap)//WeakMap { <items unknown> }
 
-// 每有clear方法，不可迭代
+// 每有 clear 方法，不可迭代
 
 
 //可以用来实现私有变量

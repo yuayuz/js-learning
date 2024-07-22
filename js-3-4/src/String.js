@@ -10,10 +10,10 @@ console.log(s.length); //7
 s="new "+s
 console.log(s); //new String
 
-// 字符串转换，toString()，null与undefined没有该方法；接受底数参数
+// 字符串转换，toString()，null 与 undefined 没有该方法；接受底数参数
 const num=10;
 console.log(num.toString(2)); //1010
-// 字符串转换String()将null与undefined分别转为"null"与"undefined"
+// 字符串转换 String()将 null 与 undefined 分别转为"null"与"undefined"
 
 // 模板字面量
 const s1=`a

@@ -11,9 +11,9 @@
     g：全局模式，查找全部内容
     i：不区分大小写
     m：多行模式，茶找到一行文本末尾时会继续查找
-    y：粘附模式，从lastIndex开始及之后的字符串
-    u：Unicode模式
-    s：dotAll模式，匹配任何字符
+    y：粘附模式，从 lastIndex 开始及之后的字符串
+    u：Unicode 模式
+    s：dotAll 模式，匹配任何字符
 */
 // "\"转义，某些情况下需要二次转移
 
@@ -43,14 +43,14 @@ console.log(matches4[0])
 
 // Boolean（不建议直接实例化）
 
-let f=new Boolean(false) // 所有对象在布尔表达式中自动转换为true
+let f=new Boolean(false) // 所有对象在布尔表达式中自动转换为 true
 console.log(f&&true)
 let f1=Boolean(false)
 console.log(f1&&true)
 
 // Number （不建议直接实例化）
 // valueOf返回原始数值
-// toString,toLocaleString返回数值字符串,toString可接受一个表示底数的参数
+// toString,toLocaleString 返回数值字符串,toString 可接受一个表示底数的参数
 let num=10
 console.log(num)
 console.log(num.valueOf())
@@ -60,13 +60,13 @@ console.log(num.toLocaleString())
 console.log(typeof num.toString())
 console.log(typeof num.toLocaleString())
 
-// toFix返回包含指定小数点位的数值字符串
+// toFix 返回包含指定小数点位的数值字符串
 console.log(num.toFixed(3))
 // toExponential返回科学计数法，接受一个表示小数位数的参数
 console.log(num.toExponential(1))
 
 // String
-// valueOf，toString,toLocaleString返回原始字符串值
+// valueOf，toString,toLocaleString 返回原始字符串值
 
 // charAt返回相应索引的字符
 let s="123456"

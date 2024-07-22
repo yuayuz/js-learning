@@ -2,7 +2,7 @@
 
 // 代理是对象目标的抽象
 
-// Proxy接受两个参数：目标对象和处理程序对象
+// Proxy 接受两个参数：目标对象和处理程序对象
 // 捕获器是在处理程序独一项中定义的“基本操作的拦截器”
 
 const target = {
@@ -23,7 +23,7 @@ console.log("target",target.foo) //target bar
 console.log("proxy",proxy["foo"]) //proxy hello
 console.log("target",target["foo"]) //target bar
 
-// k可以调用全局Reflect对象上（封装了原始行为）的同名方法来轻松重建
+// k 可以调用全局 Reflect 对象上（封装了原始行为）的同名方法来轻松重建
 
 const handler1={
     get(){

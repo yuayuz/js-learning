@@ -5,7 +5,7 @@ console.log(now) //2024-07-13T08:00:57.657Z
 let date1=new Date(Date.parse("2014-07-12"));
 console.log(date1) //2014-07-12T00:00:00.000Z
 
-let date2=new Date(Date.UTC(2014, 0,1));// 0起点月数
+let date2=new Date(Date.UTC(2014, 0,1));// 0 起点月数
 console.log(date2) //2014-01-01T00:00:00.000Z
 
 // toLocaleString

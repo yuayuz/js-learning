@@ -3,16 +3,16 @@
 console.log("String") //String
 console.log(Boolean("1")) //true
 console.log(Boolean("")) //false
-// Number非0数值转为true，0与NaN转为false
+// Number 非 0 数值转为 true，0 与 NaN 转为 false
 console.log("Number") //Number
 console.log(Boolean(1)) //true
 console.log(Boolean(0)) //false
 console.log(Boolean(NaN)) //false
-// Object任意对象转为true，null转为false
+// Object 任意对象转为 true，null 转为 false
 console.log("Object") //Object
 console.log(Boolean({})) //true
 console.log(Boolean(null)) //false
-// Undefined不存在传为true，undefined转为false
+// Undefined 不存在传为 true，undefined 转为 false
 console.log("Undefined") //Undefined
 console.log(Boolean()) //false
 let u

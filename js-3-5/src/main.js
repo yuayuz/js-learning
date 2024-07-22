@@ -13,7 +13,7 @@ console.log(num);//2
 num -= num
 console.log(num);//0
 
-// ECMAScript的之一IEEE 754 64位格式存储，位操作县转换为32为进行操作再转换为64位（NaN与Infinity会被当0处理）
+// ECMAScript 的之一 IEEE 754 64位格式存储，位操作县转换为 32 为进行操作再转换为 64 位（NaN 与 Infinity会被当 0 处理）
 // 按位非（～）
 let a = 1
 let a1 = ~1
